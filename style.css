@@ -1,0 +1,181 @@
+/* ตั้งค่าพื้นฐาน */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e8f5e9;
+    color: #388e3c;
+    text-align: center;
+  }
+  
+  header {
+    background-color: #c8e6c9;
+    padding: 20px 0;
+    border-bottom: 2px solid #81c784;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #4caf50;
+  }
+  
+  header h2 {
+    margin: 5px 0 0;
+    font-size: 24px;
+    color: #2e7d32;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  /* แก้ไขแกลเลอรีรูปภาพ */
+  .album h3 {
+    color: #66bb6a;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .photos, .videos {
+    margin: 20px 0;
+  }
+  
+  .photos h4, .videos h4 {
+    font-size: 22px;
+    color: #388e3c;
+    margin-bottom: 10px;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  
+  .gallery img, .gallery video {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  video {
+    max-height: 200px;
+  }
+  
+  /* ส่วนคลิปเสียง */
+  .audio {
+    margin: 20px auto;
+    max-width: 600px;
+  }
+  
+  .audio h3 {
+    color: #66bb6a;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  audio {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #81c784; /* กรอบสีเขียวอ่อน */
+    background-color: #ffffff;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* กล่องข้อความอวยพร */
+  .message {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 2px solid #81c784; /* กรอบสีเขียวอ่อน */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Media Queries สำหรับอุปกรณ์มือถือและแท็บเล็ต */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 28px;
+    }
+  
+    header h2 {
+      font-size: 20px;
+    }
+  
+    .album h3 {
+      font-size: 24px;
+    }
+  
+    .gallery {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  
+    .gallery img, .gallery video {
+      max-width: 100%;
+    }
+  
+    video {
+      max-height: 180px;
+    }
+  
+    .audio h3 {
+      font-size: 20px;
+    }
+  
+    .audio audio {
+      max-width: 100%;
+    }
+  
+    .message {
+      font-size: 16px;
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 24px;
+    }
+  
+    header h2 {
+      font-size: 18px;
+    }
+  
+    .album h3 {
+      font-size: 20px;
+    }
+  
+    .gallery {
+      grid-template-columns: 1fr;
+    }
+  
+    .gallery img, .gallery video {
+      max-width: 100%;
+    }
+  
+    video {
+      max-height: 150px;
+    }
+  
+    .audio h3 {
+      font-size: 18px;
+    }
+  
+    .audio audio {
+      width: 100%;
+    }
+  
+    .message {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  
